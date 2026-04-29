@@ -34,6 +34,7 @@ let color = "black";
 
 function drawCircle(x, y){
     ctx.fillStyle = color;
+    ctx.globalAlpha = opacity;
     ctx.beginPath();
     ctx.arc(x,y,10,0,Math.PI*2,false);
     ctx.fill();
